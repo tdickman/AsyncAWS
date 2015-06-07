@@ -2,7 +2,7 @@ from tornado.httpclient import HTTPRequest, HTTPClient, AsyncHTTPClient
 from tornado.ioloop import IOLoop
 from tornado.httputil import url_concat
 from concurrent.futures import Future
-from urlparse import urlparse
+from urllib.parse import urlparse
 from lxml import objectify
 import datetime
 import hashlib

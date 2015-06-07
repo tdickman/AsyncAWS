@@ -144,7 +144,7 @@ class SNS(AWS):
         }
         # convert message to json if needed
         if message_structure == 'json':
-            if not isinstance(message, (str, unicode)):
+            if not isinstance(message, str):
                 params['Message'] = json.dumps(message)
             params['MessageStructure'] = message_structure
         # set topic_arn or target_arn
